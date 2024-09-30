@@ -6,10 +6,10 @@ import tempfile
 import PyPDF2
 
 # Initialize the Ollama client
-client = Client(host='http://192.168.20.138:11434')
+client = Client(host='http://127.0.0.1:11434')
 
 # Set up the Streamlit page
-st.set_page_config(page_title="FloatGPT", page_icon="🤖", layout="wide")
+st.set_page_config(page_title="Qwen O1", page_icon="🤖", layout="wide")
 st.title("Qwen O1")
 
 # Custom CSS for styling
@@ -208,7 +208,7 @@ if user_input:
         )
         full_response = ""
         for chunk in client.chat(
-            model='qwen2.5:32b',
+            model='qwen2.5:latest',
             messages=[{"role": "user", "content": final_prompt}],
             stream=True,
         ):
