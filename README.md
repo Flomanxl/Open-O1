@@ -75,4 +75,4 @@ O1 is a Streamlit application powered by the Qwen AI model using the Ollama clie
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 ```
 
-Feel free to modify any sections as needed based on your actual project details!
+
